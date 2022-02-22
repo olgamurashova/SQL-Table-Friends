@@ -1,1 +1,5 @@
-# SQL-Table-Friends
+## SQL Table Friends
+
+### General information
+
+This is a 
