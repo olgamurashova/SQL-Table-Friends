@@ -1,0 +1,48 @@
+//creating table 
+CREATE TABLE friends (
+  id INTEGER
+  name TEXT
+  birthday DATE
+);
+
+//inserting a new row into the table
+INSERT INTO friends (id, name, birthday)
+VALUES (1, 'Ororo Munroe', '1940-05-30');
+
+//checking if the table has been created 
+SELECT * 
+FROM friends;
+
+//inserting more rows
+INSERT INTO friends (id, name, birthday)
+VALUES (2, 'Elena Golubeva', '1987-07-13');
+INSERT INTO friends (id, name, birthday)
+VALUES (3, 'George Anton', '1989-10-13');
+
+//updating statement edits a row in the table
+UPDATE friends
+SET name = 'Storm'
+WHERE id = 1;
+
+//adding new column
+ALTER TABLE friends
+ADD COLUMN email TEXT;
+
+//updating email address for everyone
+UPDATE friends
+SET email = storm@codecademy.com
+WHERE id = 1;
+UPDATE friends
+SET email = lalaland@gmail.com
+WHERE id = 2;
+UPDATE friends
+SET email = cleao@gmail.com
+WHERE id = 3;
+
+//deleting a row
+DELETE FROM friends
+WHERE id = 1;
+
+//checking the result 
+SELECT *
+FROM friends;
