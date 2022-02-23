@@ -26,3 +26,11 @@ FROM movies;
 SELECT DISTINCT year
 FROM movies;
 
+*Filtering specific information using WHERE clause
+
+SELECT *
+FROM movies 
+WHERE imdb_rating < 5;
+SELECT *
+FROM movies 
+WHERE year > 2014;
