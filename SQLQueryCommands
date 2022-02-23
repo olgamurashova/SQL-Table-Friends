@@ -49,3 +49,15 @@ WHERE name LIKE 'A%';
 SELECT * 
 FROM movies 
 WHERE name LIKE '%man%';
+
+*Filtering for all movies that have rating
+
+SELECT name
+FROM movies 
+WHERE imdb_rating IS NOT NULL;
+
+*Filtering for the movies that have no rating
+
+SELECT name
+FROM movies
+WHERE imdb_rating IS NULL;
