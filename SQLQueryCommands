@@ -18,3 +18,8 @@ FROM movies;
 
 SELECT imdb_rating AS 'IMDb'
 FROM movies;
+
+*Returning unique values from the output using DISTINCT keyword
+
+SELECT DISTINCT genre
+FROM movies;
