@@ -1,0 +1,12 @@
+* Selecting two columns of the table:
+
+SELECT name, genre
+FROM movies;
+
+*Selecting all columns of the table:
+SELECT name, genre, year
+FROM movies;
+
+or
+
+SELECT * FROM movies;
