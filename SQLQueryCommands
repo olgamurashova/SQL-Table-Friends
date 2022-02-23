@@ -10,3 +10,8 @@ FROM movies;
 or
 
 SELECT * FROM movies;
+
+*Renaming a column using AS keyword
+
+SELECT name AS 'title'
+FROM movies;
