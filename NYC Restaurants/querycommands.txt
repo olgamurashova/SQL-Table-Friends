@@ -22,19 +22,39 @@ WHERE cuisine = 'Chinese';
 5. Returning all the restaurants with reviews of 4 and above.
 
 SELECT *
-FROM nomnom
+FROM restaurants
 WHERE review >= 4;
 
 6. Returning all the restaurants that are Italian and $$$:
 
 SELECT * 
-FROM nomnom
+FROM restaurants
 WHERE cuisine = 'Italian' AND price = '$$$';
 
 7. Returning the name of a restaurant that contains the word ‘meatball’ in it:
 
 SELECT * 
-FROM nomnom
+FROM restaurants
 WHERE name LIKE '%meatball%';
 
-8. 
+8. Finding all the close by spots in Midtown, Downtown or Chinatown:
+
+SELECT * 
+FROM restaurants
+WHERE neighborhood = 'Midtown'
+OR neighborhood = 'Downtown'
+OR neighborhood = 'Chinatown';
+
+9. Finding all the health grade pending restaurants (empty values):
+
+SELECT * 
+FROM restaurants
+WHERE health IS NULL;
+
+10. Creating a Top 10 Restaurants Ranking based on reviews:
+
+SELECT * 
+FROM restaurants
+ORDER BY review DESC
+LIMIT 10;
+
