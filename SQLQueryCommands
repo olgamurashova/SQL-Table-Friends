@@ -102,3 +102,9 @@ SELECT *
 FROM movies
 WHERE genre = 'romance'
 OR genre = 'comedy';
+
+*Sorting everything by movies title from A to Z
+
+SELECT *
+FROM movies
+ORDER BY name;
