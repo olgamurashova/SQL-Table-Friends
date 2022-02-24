@@ -90,3 +90,10 @@ SELECT *
 FROM movies
 WHERE year < 1985
 AND genre = 'horror';
+
+*Combining multiple conditions using AND
+
+SELECT *
+FROM movies
+WHERE year > 2014
+   OR genre = 'action';
