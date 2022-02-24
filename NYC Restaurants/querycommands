@@ -1,0 +1,20 @@
+1. Retrieving all table data:
+
+SELECT * 
+FROM restaurants;
+
+2. Selecting distinct neighborhoods:
+
+SELECT DISTINCT neighborhood
+FROM restaurants;
+
+3. Seelecting distinct cuisine types:
+
+SELECT DISTINCT cuisine
+FROM restaurants;
+
+4. Selecting the options for Chinese takeout:
+
+SELECT *
+FROM restaurants
+WHERE cuisine = 'Chinese';
