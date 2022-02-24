@@ -122,3 +122,14 @@ ORDER BY year DESC;
 SELECT name, year, imdb_rating
 FROM movies
 ORDER BY imdb_rating DESC;
+
+*Specifying the maximum number of rows using LIMIT clause
+
+SELECT *
+FROM movies
+LIMIT 10;
+
+SELECT *
+FROM movies
+ORDER BY imdb_rating DESC
+LIMIT 3;
