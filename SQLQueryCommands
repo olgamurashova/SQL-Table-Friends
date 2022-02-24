@@ -108,3 +108,10 @@ OR genre = 'comedy';
 SELECT *
 FROM movies
 ORDER BY name;
+
+*Sorting things in a decreasing order
+
+SELECT *
+FROM movies
+WHERE imdb_rating > 8
+ORDER BY year DESC;
